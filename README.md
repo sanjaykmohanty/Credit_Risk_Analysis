@@ -55,7 +55,7 @@ Two machine learing models, BalancedRandomForestClassifier and EasyEnsembleClass
 
 The summary of the results for the "High Risk" candidates from each model is shown in the table below:
 
-![image](https://user-images.githubusercontent.com/31812730/211220042-1b24b48b-1dc2-4aa8-a582-78eb75741c66.png)
+![image](https://user-images.githubusercontent.com/31812730/211220390-d1ab0c29-b24d-437a-a736-526d064484c4.png)
 
 After reviewing the results of all six models, it can be concluded that the EasyEnsembleClassifer model yields the best results with an accuracy rate of 93.2% and a 9% precision rate when predicting "High Risk" candidates. The sensitivity rate(recall) was also the highest at 94%. Same is true for predicting "Low Risk" candidates. The sensitivity rate at 94% and an F1 score of 97%. 
 
