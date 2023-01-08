@@ -27,17 +27,36 @@ Two machine learing models, BalancedRandomForestClassifier and EasyEnsembleClass
 
 ### Undersampling
 
+![image](https://user-images.githubusercontent.com/31812730/211215985-36a8a14e-d402-4562-b11f-b027c368e39e.png)
 
+![image](https://user-images.githubusercontent.com/31812730/211216025-5d8eb82f-e2ef-474c-ad51-85e08390b43c.png)
+
+### Combination (Over and Under) Sampling
+
+![image](https://user-images.githubusercontent.com/31812730/211216125-2e5ff55a-eb3a-4a6d-a43f-191f1daefa7e.png)
+
+![image](https://user-images.githubusercontent.com/31812730/211216146-e5b033d0-e603-44e8-804e-7af5bd54a1d3.png)
+
+### Ensemble Learners
+
+**Balanced Random Forest Classifier**
+
+![image](https://user-images.githubusercontent.com/31812730/211216676-13c515eb-78f4-45b0-8216-0f72523594ba.png)
+
+![image](https://user-images.githubusercontent.com/31812730/211216699-a458bbd9-df47-4415-b1dd-f6c064b96ed0.png)
+
+**Easy Ensemble AdaBoost Classifier**
+
+![image](https://user-images.githubusercontent.com/31812730/211216986-56c7ee67-2bec-462b-b534-488ea9481959.png)
+
+![image](https://user-images.githubusercontent.com/31812730/211217016-91bef702-ea78-43b9-a512-3276488b922d.png)
 
 ## Summary
-In reviewing all six models, the EasyEnsembleClassifer model yielded the best results with an accuracy rate of 93.2% and a 9% precision rate when predicting "High Risk candidates. The sensitivity rate (aka recall) was also the highest at 92% compared to the other models. The result for predicting "Low Risk" was also the highest with the sensitivity rate at 94% and an F1 score of 97%. Therefore, if a model needed to be recommended to perform this type of analysis, then this one would be the clear choice.
 
-Ranking of models in descending order based on "High Risk" results:
+The summary of the results for the "High Risk" candidates from each model is shown in the table below:
 
-EasyEnsembleClassifer: 93.2% accuracy, 9% precision, 92% recall, and 16% F1 Score
-BalancedRandomForestClassifer: 78.9% accuracy, 3% precision, 70% recall and 6% F1 Score
-SMOTE: 65.2% accuracy, 1% precision, 61% recall and 2% F1 Score
-SMOTEENN: 64.5% accuracy, 1% precision, 72% recall and 2% F1 Score
-RandomOverSampler: 64.0% accuracy, 1% precision, 66% recall and 2% F1 Score
-ClusterCentroids: 54.5% accuracy, 1% precision, 69% recall and 1% F1 Score
-A side note that should be considered is that original dataset had 99% of the applications classified as "Low Risk" with only 1% of the data classified in the "High Risk" category. This may skew the results greatly as there is a risk that the Machine Learning algorithms are creating clusters drawing from too small of a dataset of actual "High Risk" applications. This margin of risk might not be something that banks would be comfortable accepting.
+![image](https://user-images.githubusercontent.com/31812730/211220042-1b24b48b-1dc2-4aa8-a582-78eb75741c66.png)
+
+After reviewing the results of all six models, it can be concluded that the EasyEnsembleClassifer model yields the best results with an accuracy rate of 93.2% and a 9% precision rate when predicting "High Risk" candidates. The sensitivity rate(recall) was also the highest at 94%. Same is true for predicting "Low Risk" candidates. The sensitivity rate at 94% and an F1 score of 97%. 
+
+EasyEnsembleClassifer is the recommended model to perform this type of analysis.
